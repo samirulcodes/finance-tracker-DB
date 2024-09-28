@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Planner</title>
+  <link rel="stylesheet" href="finance.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Planner</h1>
+    
+    <!-- Income Section -->
+    <section id="income-section">
+      <h2>Income</h2>
+      <input type="number" id="income-amount" placeholder="Enter Income">
+      <button id="add-income">Add Income</button>
+      <p id="total-income">Total Income: $0</p>
+    </section>
+    
+    <!-- Expenses Section -->
+    <section id="expenses-section">
+      <h2>Expenses</h2>
+      <input type="text" id="expense-name" placeholder="Expense Name">
+      <input type="number" id="expense-amount" placeholder="Expense Amount">
+      <select id="expense-category">
+        <option value="Food">Food</option>
+        <option value="Rent">Rent</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Other">Other</option>
+      </select>
+      <button id="add-expense">Add Expense</button>
+      
+      <ul id="expenses-list"></ul>
+    </section>
+
+    <!-- Savings Section -->
+    <section id="savings-section">
+      <h2>Savings Goals</h2>
+      <input type="number" id="savings-goal" placeholder="Set Savings Goal">
+      <p id="current-savings">Current Savings: $0</p>
+      <p id="goal-status">Savings Goal Progress: 0%</p>
+    </section>
+    
+    <!-- Graphical Breakdown -->
+    <section id="breakdown-section">
+      <h2>Spending Breakdown</h2>
+      <canvas id="breakdown-chart"></canvas>
+    </section>
+  </div>
+  
+  <script src="finance-tracker.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ 
+  </script>
+</body>
+</html>

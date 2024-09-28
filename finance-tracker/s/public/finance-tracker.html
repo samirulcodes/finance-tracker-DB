@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Finance Tracker</h1>
+
+       
+
+        <div class="savings-goal">
+            <h2>Set Your Savings Goal</h2>
+            <input type="number" id="savings-goal" placeholder="Savings Goal">
+            <button id="set-goal-btn">Set Goal</button>
+            <div id="goal-notification"></div>
+        </div>
+
+        <div class="transaction-form">
+            <h2>Add Transaction</h2>
+            <input type="number" id="transaction-amount" placeholder="Amount">
+            <input type="text" id="transaction-category" placeholder="Category">
+            <button id="add-transaction">Add Transaction</button>
+        </div>
+
+        <h2>Your Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-list"></tbody>
+        </table>
+
+        <button id="logout-btn" class="btn">Logout</button>
+    </div>
+
+    <script src="finance-tracker.js"></script>
+</body>
+</html>

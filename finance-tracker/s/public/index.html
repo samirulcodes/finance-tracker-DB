@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group input, button { width: 100%; padding: 10px; margin-top: 5px; }
+        .error-message { color: red; }
+        .toggle-link { text-align: center; }
+    </style> -->
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Login</h2>
+    <p id="error-message" class="error-message"></p>
+
+    <form id="auth-form">
+        <div class="form-group">
+            <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" id="auth-button">Login</button>
+    </form>
+
+    <p id="toggle-text">Don't have an account? <a href="#" id="toggle-link">Register</a></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
