@@ -80,6 +80,37 @@ tr:hover {
     font-weight: bold;
 }
 
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%; /* Adjust width for tablets */
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    input[type="text"], input[type="number"], input[type="password"] {
+        padding: 8px; /* Adjust padding for tablets */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    th, td {
+        padding: 8px; /* Adjust table cell padding */
+    }
+
+    .goal-notification {
+        font-size: 16px; /* Adjust notification font size */
+    }
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
@@ -92,5 +123,45 @@ tr:hover {
 
     button {
         padding: 8px;
+    }
+}
+
+
+
+/* Further adjustments for smaller screens (mobile) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    h1, h2 {
+        font-size: 22px; /* Reduce font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="number"], input[type="password"] {
+        font-size: 14px; /* Reduce font size in inputs for mobile */
+        padding: 8px; /* Reduce padding for better fit */
+        margin: 8px 0;
+    }
+
+    button {
+        padding: 8px 15px; /* Adjust button padding for mobile */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    th, td {
+        font-size: 14px; /* Reduce table font size */
+        padding: 8px; /* Adjust padding in table cells */
+    }
+
+    .goal-notification {
+        font-size: 14px; /* Adjust notification font size */
     }
 }
