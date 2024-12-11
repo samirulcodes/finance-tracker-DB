@@ -115,3 +115,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+// Explanation
+
+// Important Parts for Interview Questions
+
+// Authentication with Tokens:
+// Question: How does the app ensure secure communication with the backend?
+// Answer: The app sends the token as a Bearer token in the Authorization header for every API request.
+
+// Dynamic UI Updates:
+// Question: How does the app update the transaction list dynamically?
+// Answer: The fetchTransactions() function retrieves the data and uses innerHTML and document.createElement to update the table.
+
+// Error Handling:
+// Question: What happens if the server returns an error or the user enters invalid data?
+// Answer: While basic validation (e.g., checking if fields are filled) is done on the client side, the code could benefit from additional error handling for server responses.
+
+// Savings Goal Logic:
+// Question: How does the app notify the user if they exceed their savings goal?
+// Answer: The total expenses are compared to the savings goal fetched from the server, and a warning message is shown if they exceed it.
+// Code Optimization:
+
+// Question: Can the code be optimized?
+// Answer: Yes, for example:
+// Combine repeated fetch logic into reusable functions.
+// Add error handling for fetch requests.
+
+// Security:
+// Question: What are the security concerns in this implementation?
+// Answer: The token is stored in localStorage, which is accessible via JavaScript. For better security, it could be stored in HttpOnly cookies.
